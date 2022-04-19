@@ -35,7 +35,60 @@
         <p>Currently, ReactJS gaining quick popularity as the best JavaScript framework among web developers. It is playing an essential role in the front-end ecosystem. The important features of ReactJS are as following.</p>
         <p><ul>
          <li>JSX (JavaScript XML)</li>
+         <code>const one = <h1>Hello World!</h1>;</code>
          <li>Component</li>
+         React components example
+         <code>function Welcome(props) {
+            return <h1>Hello, {props.name}</h1>;
+          }
+          
+          const element = <Welcome name="Faisal Arkan" />;
+          ReactDOM.render(
+            element,
+            document.getElementById('root')
+          );</code>
+
+          Stateful class type components
+          <code>class Cat extends React.Component {
+            constructor(props) {
+              super(props);
+          
+              this.state = {
+                humor: 'happy'
+              }
+            }
+            render() {
+              return(
+                <div>
+                  <h1>{this.props.name}</h1>
+                  <p>
+                    {this.props.color}
+                  </p>
+                </div>
+              );
+            }
+          }</code>
+
+          Stateless Components
+Functional Components (Arrow Function from ES6)
+<code>const Cat = props => {
+    return (  
+      <div>
+        <h1>{props.name}</h1>
+        <p>{props.color}</p>
+      </div>;
+    );
+  };</code>
+
+  Implicit Return Components
+
+  <code>const Cat = props => 
+    <div>
+      <h1>{props.name}</h1>
+      <p>{props.color}</p>
+    </div>;</code>
+
+    
          <li>One-way Data Binding</li>
          <li>Virtual DOM</li>
          <li>Simplicity</li>

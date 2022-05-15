@@ -35,18 +35,27 @@ code {
 }
 
 /* Rainbow Effect */
-a {
+#resource-link a {
   color: black;
   background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
   background-clip: text;
   -webkit-background-clip: text;
 }
 
-a:hover {
+#resource-link a:hover {
     color: transparent;
     transition: 500ms ease;
   }
 
+  /* Smooth-Scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  
+
+
+/* Media Query */
 @media (max-width: 768px) {
     div.main-body {
         grid-template-columns: 1fr;

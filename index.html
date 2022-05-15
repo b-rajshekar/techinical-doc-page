@@ -11,11 +11,11 @@
 <div class="main-body">
     <nav id="navbar">
         <header>ReactJS</header>
-        <a href="#introduction" class="nav-link">Introduction</a>
-        <a href="#features" class="nav-link">Features</a>
-        <a href="#properties" class="nav-link">Properties</a>
-        <a href="#why_react?" class="nav-link">Why React?</a>
-        <a href="#reactJS_developer_skills" class="nav-link">ReactJS Developer Skills</a>
+        <a href="#Introduction" class="nav-link">Introduction</a>
+        <a href="#Features" class="nav-link">Features</a>
+        <a href="#Properties" class="nav-link">Properties</a>
+        <a href="#Why_React?" class="nav-link">Why React?</a>
+        <a href="#ReactJS_Developer_Skills" class="nav-link">ReactJS Developer Skills</a>
     </nav>
 
     <!-- Main Section -->
@@ -24,22 +24,51 @@
     <!-- Introduction -->
     <section class="main-section" id="Introduction">
         <header>Introduction</header>
-        <p>ReactJS is a declarative, efficient, and flexible JavaScript library for building reusable UI components. It is an open-source, component-based front end library responsible only for the view layer of the application. It was created by Jordan Walke, who was a software engineer at Facebook. It was initially developed and maintained by Facebook and was later used in its products like WhatsApp & Instagram. Facebook developed ReactJS in 2011 in its newsfeed section, but it was released to the public in the month of May 2013.</p>
-        <p>Why learn ReactJS? Today, many JavaScript frameworks are available in the market(like angular, node), but still, React came into the market and gained popularity amongst them. The previous frameworks follow the traditional data flow structure, which uses the DOM (Document Object Model). DOM is an object which is created by the browser each time a web page is loaded. It dynamically adds or removes the data at the back end and when any modifications were done, then each time a new DOM is created for the same page. This repeated creation of DOM makes unnecessary memory wastage and reduces the performance of the application.</p>
+        <p>
+            <ul>
+            <li>ReactJS is a declarative, efficient, and flexible JavaScript library for building reusable UI components. It is an open-source, component-based front end library responsible only for the view layer of the application. It was created by Jordan Walke, who was a software engineer at Facebook. It was initially developed and maintained by Facebook and was later used in its products like WhatsApp & Instagram. Facebook developed ReactJS in 2011 in its newsfeed section, but it was released to the public in the month of May 2013.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                Why learn ReactJS? Today, many JavaScript frameworks are available in the market(like angular, node), but still, React came into the market and gained popularity amongst them. The previous frameworks follow the traditional data flow structure, which uses the DOM (Document Object Model). DOM is an object which is created by the browser each time a web page is loaded. It dynamically adds or removes the data at the back end and when any modifications were done, then each time a new DOM is created for the same page. This repeated creation of DOM makes unnecessary memory wastage and reduces the performance of the application.
+                </li>
+              </ul>
+          </p>
     </section>
 
     <!-- Features -->
-    <section class="main-section" id="Features">
-        <header>Features</header>
+    <section id="Features" class="main-section"><header>Features</header>
         <ul>
-          <li>JSX (JavaScript Syntax Extension)</li>
-          <li>Virtual DOM</li>
-          <li>Performance</li>
-          <li>Extensions</li>
-          <li>Components</li>
-          <li>Simplicity</li>
-        </ul>
-    </section>
+                <li>JSX (JavaScript Syntax Extension)
+      <code> "const myElement = <h1>I Love JSX!</h1>;
+      
+      const root = ReactDOM.createRoot(document.getElementById('root'));
+      root.render(myElement); "</code>
+                </li><br>
+                <li>Virtual DOM<br>
+                <code>
+      A virtual DOM is a lightweight JavaScript representation of the Document Object Model (DOM) used in declarative web frameworks such as React, Vue. js, and Elm. Updating the virtual DOM is comparatively faster than updating the actual DOM (via js).</code>
+      <br>
+      <code>
+      In React, for every DOM object, there is a corresponding “virtual DOM object.” A virtual DOM object is a representation of a DOM object, like a lightweight copy. A virtual DOM object has the same properties as a real DOM object, but it lacks the real thing's power to directly change what's on the screen.</code></li> <br>
+                <li>Performance</li>
+                <li>Extensions</li>
+                <li>Components<br><br>
+                  <code>function Welcome(props) {
+        return <h1>Hello, {props.name}</h1>;
+      }</code>
+                  <code>class Welcome extends React.Component {
+        render() {
+          return <h1>Hello, {this.props.name}</h1>;
+        }
+      }</code>
+      <code>const element = <Welcome name="Sara" />;</code>
+                </li><br>
+                <li>Simplicity</li>
+              </ul>
+          </section>
 
     <!-- Properties -->
     <section class="main-section" id="Properties">
@@ -58,62 +87,37 @@
     </section>
 
         <!-- Why React? -->
-        <section class="main-section" id="Why_React?">
-        <p>
-            <header>Why React?</header>
-            Now, the main question arises in front of us is why one should use React. There are so many open-source platforms for making the front-end web application development easier, like Angular. Let us take a quick look on the benefits of React over other competitive technologies or frameworks. With the front-end world-changing on a daily basis, it's hard to devote time to learning a new framework especially when that framework could ultimately become a dead end. So, if you're looking for the next best thing but you're feeling a little bit lost in the framework jungle, I suggest checking out React.
-            <ol>
-                <li>Simplicity</li>
-                ReactJS is just simpler to grasp right away. The component-based approach, well-defined lifecycle, and use of just plain JavaScript make React very simple to learn, build a professional web (and mobile applications), and support it. React uses a special syntax called JSX which allows you to mix HTML with JavaScript. This is not a requirement; Developer can still write in plain JavaScript but JSX is much easier to use.
-
-                <li>Easy to learn</li>
-                Anyone with a basic previous knowledge in programming can easily understand React while Angular and Ember are referred to as Domain-specific Language, implying that it is difficult to learn them. To react, you just need basic knowledge of CSS and HTML.
-
-                <li>Native Approach</li>
-                React can be used to create mobile applications (React Native). And React is a diehard fan of reusability, meaning extensive code reusability is supported. So at the same time, we can make IOS, Android and Web applications.
-
-                <li>Data Binding</li>
-                React uses one-way data binding and an application architecture called Flux controls the flow of data to components through one control point the dispatcher. It's easier to debug self-contained components of large ReactJS apps.
-
-                <li>Performance</li>
-                React does not offer any concept of a built-in container for dependency. You can use Browserify, Require JS, EcmaScript 6 modules which we can use via Babel, ReactJS-di to inject dependencies automatically.
-
-                <li>Testability</li>
-                ReactJS applications are super easy to test. React views can be treated as functions of the state, so we can manipulate with the state we pass to the ReactJS view and take a look at the output and triggered actions, events, functions, etc. 
-            </ol>
-        </p>
-    </section>
+        <section id="Why_React?" class="main-section"><header>Why React?</header>
+            <p>Now, the main question arises in front of us is why one should use React. There are so many open-source platforms for making the front-end web application development easier, like Angular.</p>
+            <p>Let us take a quick look on the benefits of React over other competitive technologies or frameworks. With the front-end world-changing on a daily basis, it's hard to devote time to learning a new framework especially when that framework could ultimately become a dead end. So, if you're looking for the next best thing but you're feeling a little bit lost in the framework jungle, I suggest checking out React.</p>
+            <p>ReactJS is just simpler to grasp right away. The component-based approach, well-defined lifecycle, and use of just plain JavaScript make React very simple to learn, build a professional web (and mobile applications), and support it. React uses a special syntax called JSX which allows you to mix HTML with JavaScript. This is not a requirement; Developer can still write in plain JavaScript but JSX is much easier to use.</p>
+            <p> Anyone with a basic previous knowledge in programming can easily understand React while Angular and Ember are referred to as Domain-specific Language, implying that it is difficult to learn them. To react, you just need basic knowledge of CSS and HTML.</p>
+            </section>
 
 <!-- ReactJS Developer Skills -->
-<section class="main-section" id="ReactJS_Developer_Skills">
-    <header>ReactJS Developer Skills</header>
-        <p>
-            <ul>
-                <h3>Technical Skills:</h3>
-                <li>Strong proficiency in JavaScript, object model, DOM manipulation and event handlers, data structures, algorithms, JSX, and Babel
-                </li>
-                <li>Complete understanding of ReactJS and its main fundamentals like JSX, Virtual DOM, component lifecycle, etc.</li>
-                <li>Preceding experience with ReactJS workflows like Flux, Redux, Create React App, data structure libraries</li>
-                <li>Understanding of RESTful APIs/GraphQL, HTML/CSS, ES6 (variables and scoping, array methods), code versioning tools like GIT, SVN, etc., popular frontend development tools, CI/CD tools, DevOps, performance testing frameworks like Mocha, Node + NPM</li>
-                <li>Preferred degree in Computer Science, Information Technology or similar</li>
-            </ul>
-        </p>
-
-        <p>
-            <ul>
-                <h3>Soft Skills:</h3>
-                <li>Competence to translate business needs into technical requirements
-                </li>
-                <li>Open-minded team player, willing to accept feedback and offer suggestions</li>
-                <li>Good time management, project management, communication, and interpersonal skills</li>
-                <li>Capability to write crisp and clear code based on guidelines and best practices</li>
-                <li>Willingness to learn modern-day tools and processes</li>
-                <li>Good problem-solving, troubleshooting skills</li>
-                <li>Creativity and accountability</li>
-            </ul>
-        </p>
-    </section>
-    
+<section id="ReactJS_Developer_Skills" class="main-section"><header>ReactJS Developer Skills</header>
+    <p> <ul>
+                  <h3>Technical Skills:</h3>
+                  <li>Strong proficiency in JavaScript, object model, DOM manipulation and event handlers, data structures, algorithms, JSX, and Babel
+                  </li>
+                  <li>Complete understanding of ReactJS and its main fundamentals like JSX, Virtual DOM, component lifecycle, etc.</li>
+                  <li>Preceding experience with ReactJS workflows like Flux, Redux, Create React App, data structure libraries</li>
+                  <li>Understanding of RESTful APIs/GraphQL, HTML/CSS, ES6 (variables and scoping, array methods), code versioning tools like GIT, SVN, etc., popular frontend development tools, CI/CD tools, DevOps, performance testing frameworks like Mocha, Node + NPM</li>
+                  <li>Preferred degree in Computer Science, Information Technology or similar</li>
+              </ul></p>
+    <p><ul>
+                  <h3>Soft Skills:</h3>
+                  <li>Competence to translate business needs into technical requirements
+                  </li>
+                  <li>Open-minded team player, willing to accept feedback and offer suggestions</li>
+                  <li>Good time management, project management, communication, and interpersonal skills</li>
+                  <li>Capability to write crisp and clear code based on guidelines and best practices</li>
+                  <li>Willingness to learn modern-day tools and processes</li>
+                  <li>Good problem-solving, troubleshooting skills</li>
+                  <li>Creativity and accountability</li>
+              </ul></p>
+    <p>You can visit this website to learn more about top <a href="https://www.tatvasoft.com/outsourcing/2022/02/top-10-react-developer-skills.html">ReactJS Developer Skills</a></p>
+    </section>    
 
 </main>
 </div>

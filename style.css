@@ -34,7 +34,7 @@ code {
     padding: 20px;
 }
 
-@media screen and (max-width: 750px) {
+@media Screen and (max-width: 750px) {
     div.main-body {
         grid-template-columns: 1fr;
         grid-template-areas: "navbar" "mainContent";
@@ -44,12 +44,3 @@ code {
         position: inherit;
     }
 }
-
-@media (max-width:767px){
-    img {
-      width: 200px; // new widtdiv.main-h for screen <768px
-      height: 200px; // new height for screen <768px
-    }
-   }
-
-/* Need to add mobile responsive to this page */

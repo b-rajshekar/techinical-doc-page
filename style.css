@@ -34,7 +34,20 @@ code {
     padding: 20px;
 }
 
-@media Screen and (max-width: 750px) {
+/* Rainbow Effect */
+a {
+  color: black;
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+a:hover {
+    color: transparent;
+    transition: 500ms ease;
+  }
+
+@media (max-width: 600px) {
     div.main-body {
         grid-template-columns: 1fr;
         grid-template-areas: "navbar" "mainContent";

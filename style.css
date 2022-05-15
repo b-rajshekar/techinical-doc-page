@@ -47,7 +47,7 @@ a:hover {
     transition: 500ms ease;
   }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     div.main-body {
         grid-template-columns: 1fr;
         grid-template-areas: "navbar" "mainContent";

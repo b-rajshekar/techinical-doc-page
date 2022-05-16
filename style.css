@@ -42,6 +42,10 @@ code {
   -webkit-background-clip: text;
 }
 
+#resource-link a {
+    text-decoration: none;
+}
+
 #resource-link a:hover {
     color: transparent;
     transition: 500ms ease;
